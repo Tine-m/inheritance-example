@@ -1,5 +1,3 @@
-# inheritance-example
-
 # E-Commerce Payment Processing Example 
 
 ## 1. Overview
@@ -148,7 +146,7 @@ Transaction completed.
 |---------|-------------|
 | **Abstract Class (`Payment`)** | Generalizes attributes (amount, payer, date) and enforces `processPayment()` implementation in subclasses. |
 | **Concrete Subclasses** | Implement `processPayment()` differently (CreditCard, PayPal, Cash). |
-| **Encapsulation** | `PaymentProcessor` only works with `Payment` objects, ensuring better design. |
+| **Encapsulation & Extensibility**| `PaymentProcessor` only works with `Payment` objects, ensuring better design. New payment types (e.g., `CryptoPayment`) can be added by simply **extending `Payment`**. |
 
 ---
 
@@ -159,12 +157,7 @@ Transaction completed.
 | **Abstract Superclass** | When all subclasses **share some behavior but must override specific methods**. | `Payment → CreditCardPayment, PayPalPayment` |
 | **Interfaces** | When different classes **should share a behavior but don’t necessarily share an ancestor class**. | `Flyable → Bird, Airplane, Drone` |
 
----
 
-## 6. Summary
-✅ **No interfaces used** – Inheritance is sufficient to enforce the behavior.
-✅ **Encapsulation & Extensibility** – New payment types (e.g., `CryptoPayment`) can be added by simply **extending `Payment`**.
-✅ **Best for First-Semester Students** – Simple, clear example of **inheritance and polymorphism**.
 
 
 
