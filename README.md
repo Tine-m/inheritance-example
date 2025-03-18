@@ -153,7 +153,7 @@ Transaction completed.
 ## 5. When to Use Each Approach in Java
 | Concept | Suitable Scenario | Example |
 |---------|-------------------|---------|
-| **Concrete Superclass** | When all subclasses **inherit** both attributes and behaviors. | `Employee → FullTimeEmployee, ContractEmployee` |
+| **Concrete Superclass** | When all subclasses **inherit** both attributes and behaviors. | `GameItem → Weapon, Potion` |
 | **Abstract Superclass** | When all subclasses **share some behavior but must override specific methods**. | `Payment → CreditCardPayment, PayPalPayment` |
 | **Interfaces** | When different classes **should share a behavior but don’t necessarily share an ancestor class** (they might be otherwise unrelated). | `Flyable → Bird, Airplane, Drone` or `Attackable` and `Defendable` for `GameCharacter`|
 
